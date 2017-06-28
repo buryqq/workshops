@@ -25,3 +25,8 @@ class StudentsController < ApplicationController
     redirect_to students_path, notice: I18n.t('shared.deleted', resource: 'Student')
   end
 end
+
+
+def student_params
+      params.require(:student).permit(:first_name, :last_name)
+    end
