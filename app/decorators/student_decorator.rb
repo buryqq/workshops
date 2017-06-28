@@ -4,5 +4,5 @@ class StudentDecorator < BaseDecorator
   end
 
   def avg_notes(subject_item)
-  end
+   end
 end

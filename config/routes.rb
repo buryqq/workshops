@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :teachers
+  resources :reports
   resources :subjects
   resources :visitors, only: [:index]
   resources :students do
@@ -8,6 +9,10 @@ Rails.application.routes.draw do
     get :subjects
    
   end
-root 'visitors#index'
+root 'students#index'
 
+get 'reports/subject' => 'reports#subject', :as => :subject_reports
+
+
+get :subjects, controller:"reports"
 end
