@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
 root 'students#index'
 
-get 'reports/subject' => 'reports#subject', :as => :subject_reports
+get 'reports/subject' => 'reports#subject', :as => :report_subjects
 
 
 get :subjects, controller:"reports"
