@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :teachers
+  resources :teachers do
+  	get :subjects
+  end
   resources :reports
   resources :subjects
   resources :visitors, only: [:index]
