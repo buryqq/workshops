@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     get :subjects
    
   end
-root 'students#index'
+root 'visitors#index'
 
 get 'reports/subject' => 'reports#subject', :as => :report_subjects
 
