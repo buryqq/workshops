@@ -1,3 +1,5 @@
+https://travis-ci.org/buryqq/workshops.svg?branch=master
+
 RoR Workshops
 ================
 
